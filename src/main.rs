@@ -8,6 +8,11 @@ fn main() {
     let mut searcher = Searcher::new(T);
     let mut any_counter_case = false;
     for i in 1..MAX_SIZE { // enumerate
+        let config = Configuration::new(&vec![Path::new(&vec![i,0], false)]);
+        if one_path_solver::opt(i, T) != searcher.search(config.clone()) {
+            any_counter_case = true;
+            println!("Counter case:{} {} {}", config, one_path_solver::opt(i, T), searcher.search(config.clone()));
+        }
         for j in 1..MAX_SIZE {
             let config = Configuration::new(&vec![Path::new(&vec![i,0], false),Path::new(&vec![j,0], false)]);
             let search_is_draw = searcher.search(config.clone()) == 0; // Search the result of config

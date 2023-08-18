@@ -10,3 +10,6 @@ edition = "2021"
 [profile.release]
 opt-level = 3
 lto = true
+
+[package.metadata.docs.rs]
+rustdoc-args = [ "--html-in-header", "katex-header.html" ]

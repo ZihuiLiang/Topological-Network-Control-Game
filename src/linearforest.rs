@@ -242,3 +242,50 @@ pub mod two_path_pattern_solver {
         (config.c[0].p[0] % 6 == 5 && config.c[1].p[0] % 6 == 5)    // 6x+5 6y+5
     }
 }
+
+/** A module of solving one-path linear forest.*/
+pub mod one_path_solver {
+
+    /** Return $Opt(\\{Path_{n}\\},\emptyset)$ with parameter `t`. */
+    pub fn opt(n: i32, t: i32) -> i32 {
+        if n <= 2 * t + 1 {
+            n
+        } else if n & 1 == 1 {
+            2 * t + 1
+        } else {
+            2 * t
+        }
+    }
+
+    /** Return the maximal number of vertices won by the second player in the game $(\\{Path_{n}\\}, \emptyset)$ under the assumption that the player can force the opponent to make the last move in the game.*/
+    pub fn s_odd_t_1(n: i32) -> Option<i32> {
+        let x = n % 5;
+        if x == 1 {
+            Some(-1-(n/5))
+        } else if n == 7 {
+            Some(-3)
+        } else if x == 2 {
+            Some(-(n/5))
+        }  else {
+            None
+        }
+    }
+
+    /** Return the maximal number of vertices won by the first player who starts the game at $(\\{Path_{n}\\},\emptyset)$ under the assumption that the player can force the opponent to make the last move in the game. */
+    pub fn f_even_t_1(n: i32) -> Option<i32> {
+        let x = n % 5;
+        if n == 0 {
+            Some(0)
+        } else if n == 5 { 
+            Some(1)
+        } else if x == 0 {
+            Some(-(n/5)+4)
+        } else if x == 3 {
+            Some(-(n/5)+1)
+        } else if x == 4 {
+            Some(-(n/5)+2)
+        } else {
+            None
+        }
+    }
+}

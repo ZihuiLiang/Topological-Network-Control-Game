@@ -17,7 +17,7 @@ cargo run --release
 To get the document (detailed explanation of the code) of the project, run the following terminal command:
 
 ```bash
-cargo doc --open --all
+./gendoc.sh
 ```
 
 Then a webpage showing the document will be opened. Please make sure to access this webpage with Chrome browser.
