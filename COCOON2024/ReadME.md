@@ -2,62 +2,62 @@ This is a project for verifying the theorems and lemmas in topological network-c
 
 **Lemma 1**: 
 
-+ *lemma1_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \empty)$ and *n* corresponds to the same $n$ in the lemma.
-+ In *lemma1_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\empty)\in [0,1]$ and $n\le 100$. Then after comparing the results with *lemma1_solver*'s results, the verification is done.
++ *lemma1_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \emptyset)$ and *n* corresponds to the same $n$ in the lemma.
++ In *lemma1_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\emptyset)\in [0,1]$ and $n\le 100$. Then after comparing the results with *lemma1_solver*'s results, the verification is done.
 
 **Lemma 2**:
 
-+ *lemma2_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \empty)$ and *n* corresponds to the same $n$ in the lemma.
++ *lemma2_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \emptyset)$ and *n* corresponds to the same $n$ in the lemma.
 
-+ In *lemma2_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\empty)\in [2,3]$ and $16\le n\le 100$. Then after comparing the results with *lemma2_solver*'s results, the verification is done.
++ In *lemma2_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\emptyset)\in [2,3]$ and $16\le n\le 100$. Then after comparing the results with *lemma2_solver*'s results, the verification is done.
 
 **Corollary 3**:
 
-+ *corollary3_solver(opt_g, n)* is the function of computing the result by applying the corollary directly where *opt_g* is $Opt(G', \empty)$ and *n* corresponds to the same $n$ in the corollary.
++ *corollary3_solver(opt_g, n)* is the function of computing the result by applying the corollary directly where *opt_g* is $Opt(G', \emptyset)$ and *n* corresponds to the same $n$ in the corollary.
 
-+ In *corollary3_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Cycle_n$ with $Opt(G',\empty)\in [2,3]$ and $1\le n\le 18$. Then after comparing the results with *corollary3_solver*'s results, the verification is done.
++ In *corollary3_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Cycle_n$ with $Opt(G',\emptyset)\in [2,3]$ and $1\le n\le 18$. Then after comparing the results with *corollary3_solver*'s results, the verification is done.
 
 **Theorem 1**:
 
 + *theorem1_solver(cycles)* is the function of computing the result by applying the theorem directly where *cycles[i]* is the size of $Cycle_{x_i}$, or namely, *cycles[i]* corresponds to the $x_i$ in the theorem.
 + *theorem1_generate* generates all the required cycles and *theorem1_compute* applies memorized searching algorithm to compute the results and stores them in *opt*.
-+ In *theorem1_verifier*, we apply *theorem1_generate* and *theorem1_compute* to generate and compute the result for configurations $(\bigcup Cycle_{x_i},\empty)$ with $\sum x_i\le 80$ and $x_i\in \bigcup_{j=0}^9 P_j$. Then after comparing the results with *theorem1_solver*'s results, the verification is done.
++ In *theorem1_verifier*, we apply *theorem1_generate* and *theorem1_compute* to generate and compute the result for configurations $(\bigcup Cycle_{x_i},\emptyset)$ with $\sum x_i\le 80$ and $x_i\in \bigcup_{j=0}^9 P_j$. Then after comparing the results with *theorem1_solver*'s results, the verification is done.
 
 **Theorem 2**:
 
 + *theorem2_solver(cycles)* is the function of computing the result by applying the theorem directly where *cycles[i]* is the size of $Cycle_{x_i}$, or namely, *cycles[i]* corresponds to the $x_i$ in the theorem.
 + *theorem2_generate* generates all the required cycles and *theorem2_compute* applies memorized searching algorithm to compute the results and stores them in *opt*.
-+ In *theorem2_verifier*, we apply *theorem2_generate* and *theorem2_compute* to generate and compute the result for configurations $(\bigcup Cycle_{x_i},\empty)$ of $\sum x_i\le 60$. Then after comparing the results with *theorem2_solver*'s results, the verification is done.
++ In *theorem2_verifier*, we apply *theorem2_generate* and *theorem2_compute* to generate and compute the result for configurations $(\bigcup Cycle_{x_i},\emptyset)$ of $\sum x_i\le 60$. Then after comparing the results with *theorem2_solver*'s results, the verification is done.
 
 **Lemma 5**:
 
-+ *lemma5_solver(opt_g, n, m)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \empty)$ and *n*, *m* correspond to the same $n$, $m$ in the lemma.
++ *lemma5_solver(opt_g, n, m)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \emptyset)$ and *n*, *m* correspond to the same $n$, $m$ in the lemma.
 
-+ In *lemma5_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n \cup Path_m$ with $Opt(G',\empty)\in [0,1]$ and $1\le n,m\le 10$. Then after comparing the results with *lemma5_solver*'s results, the verification is done.
++ In *lemma5_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n \cup Path_m$ with $Opt(G',\emptyset)\in [0,1]$ and $1\le n,m\le 10$. Then after comparing the results with *lemma5_solver*'s results, the verification is done.
 
 **Lemma 7**:
 
-+ *lemma7_solver(opt_g, n, m)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \empty)$ and *n*, *m* correspond to the same $n$, $m$ in the lemma.
++ *lemma7_solver(opt_g, n, m)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \emptyset)$ and *n*, *m* correspond to the same $n$, $m$ in the lemma.
 
-+ In *lemma7_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n \cup Path_m$ with $Opt(G',\empty)\in [2,3]$ and $16\le n \le 25,m\le 25$. Then after comparing the results with *lemma7_solver*'s results, the verification is done.
++ In *lemma7_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n \cup Path_m$ with $Opt(G',\emptyset)\in [2,3]$ and $16\le n \le 25,m\le 25$. Then after comparing the results with *lemma7_solver*'s results, the verification is done.
 
 **Lemma 8**:
 
-+ *lemma8_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \empty)$ and *n* correspond to the same $n$ in the lemma.
++ *lemma8_solver(opt_g, n)* is the function of computing the result by applying the lemma directly where *opt_g* is $Opt(G', \emptyset)$ and *n* correspond to the same $n$ in the lemma.
 
-+ In *lemma8_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\empty)\in [2,3]$ and $1\le n \le 33$. Then after comparing the results with *lemma8_solver*'s results, the verification is done.
++ In *lemma8_verifier*, we use dynamic programming algorithm to compute the result for all configurations $G'\cup Path_n$ with $Opt(G',\emptyset)\in [2,3]$ and $1\le n \le 33$. Then after comparing the results with *lemma8_solver*'s results, the verification is done.
 
 **Theorem 3**:
 
 + *theorem3_solver(paths)* is the function of computing the result by applying the theorem directly where *paths[i]* is the size of $Path_{x_i}$, or namely, *paths[i]* corresponds to the $x_i$ in the theorem.
 + *theorem3_generate* generates all the required paths and *theorem3_compute* applies memorized searching algorithm to compute the results and stores them in *opt*.
-+ In *theorem3_verifier*, we apply *theorem3_generate* and *theorem3_compute* to generate and compute the result for configurations $(\bigcup Path_{x_i},\empty)$ with $\sum x_i\le 75$ and $x_i\in \bigcup_{i=0}^{7} P_i$. Then after comparing the results with *theorem3_solver*'s results, the verification is done.
++ In *theorem3_verifier*, we apply *theorem3_generate* and *theorem3_compute* to generate and compute the result for configurations $(\bigcup Path_{x_i},\emptyset)$ with $\sum x_i\le 75$ and $x_i\in \bigcup_{i=0}^{7} P_i$. Then after comparing the results with *theorem3_solver*'s results, the verification is done.
 
 **Theorem 4**:
 
 + *theorem4_solver(paths)* is the function of computing the result by applying the theorem directly where *paths[i]* is the size of $Path_{x_i}$, or namely, *paths[i]* corresponds to the $x_i$ in the theorem.
 + *theorem4_generate* generates all the required paths and *theorem4_compute* applies memorized searching algorithm to compute the results and stores them in *opt*.
-+ In *theorem4_verifier*, we apply *theorem4_generate* and *theorem4_compute* to generate and compute the result for configurations $(\bigcup Path_{x_i},\empty)$ of $\sum x_i\le 60$. Then after comparing the results with *theorem4_solver*'s results, the verification is done.
++ In *theorem4_verifier*, we apply *theorem4_generate* and *theorem4_compute* to generate and compute the result for configurations $(\bigcup Path_{x_i},\emptyset)$ of $\sum x_i\le 60$. Then after comparing the results with *theorem4_solver*'s results, the verification is done.
 
 
 **Other functions**:
