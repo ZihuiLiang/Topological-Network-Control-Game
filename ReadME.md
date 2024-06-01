@@ -4,7 +4,7 @@ Welcome to the repository for our project on **Topological Network-Control Games
 
 ### Background
 
-We introduce **topological network-control games**, a new class of combinatorial games played on graphs. These games model the influence of two competing parties aiming to control a network. In each game, given the network, players move alternately, selecting an unclaimed vertex and its unclaimed neighbors within a distance of t*t*. The players must ensure that all claimed vertices stay connected. The goal is to decide which player can claim the majority of the vertices by the end of the game.
+We introduce **topological network-control games**, a new class of combinatorial games played on graphs. These games model the influence of two competing parties aiming to control a network. In each game, given the network, players move alternately, selecting an unclaimed vertex and its unclaimed neighbors within a distance of *t*. The players must ensure that all claimed vertices stay connected. The goal is to decide which player can claim the majority of the vertices by the end of the game.
 
 ### Objectives
 
