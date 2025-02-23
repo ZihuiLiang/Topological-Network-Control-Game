@@ -24,8 +24,8 @@ Our approach involves the analysis of various strategies and graph structures:
 
 Our research has been published in:
 
-- **COCOON2023:** [Liang, Z., Khoussainov, B., & Yang, H. (2023, December). Topological Network-Control Games. In *International Computing and Combinatorics Conference* (pp. 144-156). Cham: Springer Nature Switzerland.](https://link.springer.com/chapter/10.1007/978-3-031-49193-1_11)
-- **COCOON2024:** Topological network-control games  played on graphs
+- **COCOON2023:** [Liang, Z., Khoussainov, B., Yang, H. (2024). Topological Network-Control Games. In: Wu, W., Tong, G. (eds) Computing and Combinatorics. COCOON 2023. Lecture Notes in Computer Science, vol 14423. Springer, Cham. https://doi.org/10.1007/978-3-031-49193-1_11](https://link.springer.com/chapter/10.1007/978-3-031-49193-1_11)
+- **COCOON2024:** [Liang, Z., Khoussainov, B., Yang, H. (2025). Topological Network-Control Games Played on Graphs. In: Chen, Y., Gao, X., Sun, X., Zhang, A. (eds) Computing and Combinatorics. COCOON 2024. Lecture Notes in Computer Science, vol 15162. Springer, Singapore. https://doi.org/10.1007/978-981-96-1093-8_2](https://link.springer.com/chapter/10.1007/978-981-96-1093-8_2#citeas)
 
 ### Contributions
 
